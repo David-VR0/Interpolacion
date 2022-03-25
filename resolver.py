@@ -24,7 +24,7 @@ def final(constante,elementosx,px):
 
 def inicio(elementosx,elementosy,n, px):
     IgualmenteEspaciados = True
-    h=elementosx[1]
+    h=elementosx[1]-elementosx[0]
     deltas=[]
     espacios=elementosx[1]-elementosx[0]
     for i in range(1,n-1):
