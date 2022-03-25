@@ -70,7 +70,7 @@ def antr():
     if(espaciados):
         tabla.place(x=160, y=100)
         if variable.get() == '3':
-
+            tabla["displaycolumns"] = ("1", "2")
             tabla.insert("",index=0 ,text=deltas[0][0], values=(deltas[1][0], deltas[2][0]))
             tabla.insert("", index=1, text=deltas[0][1], values=(deltas[1][1], ''))
             tabla.insert("", index=2, text=deltas[0][2], values=('', ''))
@@ -88,7 +88,7 @@ def antr():
             Etresultado.place(x=180,y=400)
 
         if variable.get() == '4':
-
+            tabla["displaycolumns"] = ("1", "2", "3")
             tabla.insert("", index=0, text=deltas[0][0], values=(deltas[1][0], deltas[2][0], deltas[3][0]))
             tabla.insert("", index=1, text=deltas[0][1], values=(deltas[1][1], deltas[2][1],''))
             tabla.insert("", index=2, text=deltas[0][2], values=(deltas[1][2], '',''))
@@ -111,7 +111,7 @@ def antr():
             Etresultado.place(x=180, y=400)
 
         if variable.get() == '5':
-
+            tabla["displaycolumns"] = ("1", "2", "3", "4")
             tabla.insert("", index=0, text=deltas[0][0], values=(deltas[1][0], deltas[2][0], deltas[3][0],deltas[4][0]))
             tabla.insert("", index=1, text=deltas[0][1], values=(deltas[1][1], deltas[2][1],deltas[3][1] ,''))
             tabla.insert("", index=2, text=deltas[0][2], values=(deltas[1][2], deltas[2][2],'', ''))
@@ -135,7 +135,7 @@ def antr():
             Etresultado.config(text="P(" + str(entradapx.get()) + ") = " + str(resultado))
             Etresultado.place(x=180, y=400)
         if variable.get() == '6':
-
+            tabla["displaycolumns"] = ("1", "2", "3", "4", "5")
 
             tabla.insert("", index=0, text=deltas[0][0],
                          values=(deltas[1][0], deltas[2][0], deltas[3][0], deltas[4][0], deltas[5][0]))
